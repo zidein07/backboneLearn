@@ -1,9 +1,18 @@
 {
-  "name": "AppBackbone",
+  "name": "todo_list",
   "version": "1.0.0",
-  "description": "bakcbone",
-  "main": "../gulpfile.js",
+  "description": "todo list",
+  "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "^2.8.2",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-jscs": "^2.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidein07/ToDoList/issues"
+  },
+  "homepage": "https://github.com/zidein07/ToDoList#readme"
 }
