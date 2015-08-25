@@ -5,7 +5,7 @@ var dir = 'oneApp';
 gulp.task('connect', function () {
   return browserSync.init({
     files: [
-      dir + '/src/*.js',
+      dir + '/src/code.js',
       dir + '/css/*.css',
       dir + '/index.html'
     ],
