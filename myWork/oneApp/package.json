@@ -1,0 +1,9 @@
+{
+  "name": "AppBackbone",
+  "version": "1.0.0",
+  "description": "bakcbone",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0"
+}
