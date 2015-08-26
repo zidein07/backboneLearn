@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var dir = 'oneApp';
+var dir = 'twoApp';
 
 gulp.task('connect', function () {
   return browserSync.init({
