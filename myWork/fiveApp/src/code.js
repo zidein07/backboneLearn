@@ -24,8 +24,8 @@ var VIEW = Backbone.View.extend({
 	},
 	render: function() {
 		var self = this;
-		this.collection.forEach(function(col) {
-			self.$el.html(self.template(col.toJSON()))
+		this.collection.each(function(col) {
+			self.$el.append(self.template(col.toJSON()))
 		});
 	},
 	addItem: function() {
@@ -42,7 +42,7 @@ var collection = new COLLECTION(
 	title: 'TitleN'
 });
 
-var view = new VIEW({collection: collection,el:'#block'});
+var view = new VIEW({collection: collection,el:'#block ul'});
 
 $('#but').click(function() {
 	view.addItem();
