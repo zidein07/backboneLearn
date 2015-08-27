@@ -23,10 +23,10 @@ var VIEW = Backbone.View.extend({
 		this.render();
 	},
 	render: function() {
-		var self = this;
+		$('#block ul li').remove(),
 		this.collection.each(function(col) {
-			self.$el.append(self.template(col.toJSON()))
-		});
+			this.$el.append(this.template(col.toJSON()))
+		},this);
 	},
 	addItem: function() {
 		this.collection.add({
@@ -38,9 +38,7 @@ var VIEW = Backbone.View.extend({
 
 
 var collection = new COLLECTION(
-{
-	title: 'TitleN'
-});
+{});
 
 var view = new VIEW({collection: collection,el:'#block ul'});
 
